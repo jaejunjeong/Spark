@@ -108,5 +108,8 @@ spark.sql("SELECT age, name FROM people WHERE age > 21").show()
 df.groupBy("age").count().show()
 spark.sql("SELECT age, COUNT(age) as count FROM people GROUP BY age").show()
 
+# Stop the Spark session
+spark.stop() 
+
 
 
