@@ -42,7 +42,8 @@ filteredRDD = subRDD.filter(lambda x : x<10)
 
 '''
 Transformation functions
-map() - apply function to element (eg. rdd.map(x+2) : apply + 2 to all elements)
+map(func) - apply function to element (eg. rdd.map(x+2) : apply + 2 to all elements)
+flatmap(func) - simillar to map, but can map each input item to zero or more input items. Func should retrun Seq rather than a single item.
 filter() - filter the elements
 distinct() - filter the distinct elements 
 union() - union two RDD 
