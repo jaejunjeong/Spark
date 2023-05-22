@@ -56,6 +56,7 @@ Actions functions
 collect() - return all data in RDD 
 count() - return count of data in RDD
 top(Num) - return top Num of data in RDD
+take(N) - returns an array with the first N elements
 takeOrdered(num)(Ordering) - return ordered Num of data in RDD
 reduce(func) - The values of the RDD are calculated in parallel. (Based on calculation: func)
 '''
