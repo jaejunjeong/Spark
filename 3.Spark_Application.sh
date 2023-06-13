@@ -39,4 +39,5 @@ df.show()
 --run python3 submit.py at the another terminal
 python3 submit.py
 
---run spark application as port of master(8080)
+--check spark application as port of master(8080)
+--check spark application as port of workers(8081)
