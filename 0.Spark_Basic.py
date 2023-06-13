@@ -110,6 +110,10 @@ spark.sql("SELECT age, name FROM people WHERE age > 21").show()
 df.groupBy("age").count().show()
 spark.sql("SELECT age, COUNT(age) as count FROM people GROUP BY age").show()
 
+# Drop tempview
+spark.catalog.dropTempView("df")
+spark.catalog.dropGlobalTempView("df")
+
 # Stop the Spark session
 spark.stop() 
 
