@@ -35,6 +35,12 @@ sdf = spark.createDataFrame(mtcars)
 # Let us look at the schema of the loaded spark dataframe
 sdf.printSchema()
 
+# Row count
+sdf.count()
+
+# Preview Columns
+sdf.column
+
 # Preview the first 5 records
 sdf.show(5)
 
